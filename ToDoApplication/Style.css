@@ -1,0 +1,9 @@
+﻿.strikeOut {
+    text-decoration: line-through;
+}
+
+#container {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+}
