@@ -4,25 +4,48 @@
     <title>
 
     </title>
-    <link href="Style.css" rel="stylesheet" />
+    
     <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Style.css" rel="stylesheet" />
+
 </head>
 <body>
-    <section id="container">
-        <header>
-            <hgroup>
-                <h1>
-                    ToDo List
-                </h1>
-            </hgroup>
-        </header>
-        <input id ="todoInput" type="text" name="item" placeholder="To Do Item" />
-        <button id="button" type="button">Add</button>
-        <ol id="todoList">
-            
-        </ol>
+
+    <section id="container" class="container">
+
+        <article class="row">
+
+            <div class="col-md-6 col-md-push-3">
+
+                <input id="todoInput" type="text" name="item" placeholder="To Do Item" class="form-control" />
+
+                <!-- <button id="button" type="button" class="btn btn-primary">Add</button> -->
+
+                <ol id="todoList">
+                    <!-- li goes here -->
+                </ol>
+
+                 <button id="remove" type="button" class="hidden">Clear Selected</button>
+
+            </div>
+
+        </article>
+    
     </section>
+    <p id="stuff"></p>
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+
+        <div id="infoContainer" class="container">
+
+            <h1 id="info">Information: <small>To Add an Item Press Enter</small></h1>
+            
+        </div>
+
+    </nav>
 
     <script src="Main.js"></script>
+
 </body>
 </html>
